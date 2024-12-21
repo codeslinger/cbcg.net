@@ -36,11 +36,9 @@ module.exports = function (config) {
         return host.startsWith('www.') ? host.substring(4) : host;
     });
 
+    config.addPassthroughCopy('404.html');
     config.addPassthroughCopy('assets');
     config.addPassthroughCopy('talks');
-    config.addPassthroughCopy('404.html');
-    // config.addPassthroughCopy('favicon.ico');
-    // config.addPassthroughCopy('apple-touch-icon.png');
 
     return {
         dir: {
