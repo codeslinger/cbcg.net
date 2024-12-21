@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<title>Cipher Block Chain Gang</title>
+<meta charset="utf-8">
+<meta name="referrer" content="origin">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Cipher Block Chain Gang">
+<link href="atom.xml" rel="alternate" type="application/atom+xml">
+<style>
+*{padding:0;margin:0;}
+body{font-family:sans-serif;font-size: 20px;}
+a{text-decoration:none;color:#3063df;}
+a:hover{text-decoration:underline;color:#000;}
+header{font-size: 85%; list-style:none; display: flex; justify-content: right;}
+header a{display: inline-block; padding: 10px 20px}
+main{margin: 5px auto;padding: 10px 0 0 20px;max-width: 760px}
+main > a {display: flex; padding: 7px 10px; line-height: 28px;}
+main > a > b {font-weight: normal;font-size: 18px;color: #666;margin-left: auto;white-space: nowrap}
+@media screen and (max-width: 800px) {
+	main{margin-right: 10px}
+	ul a{padding: 10px}
+	div.s{margin: 10px 0}
+}
+</style>
+<header><a href="atom.xml">feed</a><a href="https://github.com/codeslinger">github</a></header>
+<main>
+{%- set posts = all_posts(collections.all) -%}
+{%- for post in posts %}
+{%- if post.type == 'blog' or post.type == 'long' %}
+<a href={{ post.url }}>{{ post.title }}<b>{{ post.date | post_date }}</b></a>
+{%- endif -%}
+{%- endfor -%}
+</main>

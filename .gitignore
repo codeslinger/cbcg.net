@@ -1,0 +1,8 @@
+*~
+.*.sw[po]
+.DS_Store
+
+/.vscode
+/node_modules
+/_site
+/.cache

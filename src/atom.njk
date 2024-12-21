@@ -1,0 +1,25 @@
+---
+layout: null
+permalink: "/atom.xml"
+---
+{%- set posts = all_posts(collections.all).slice(0, 20) -%}
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/assets/feed.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>cbcg.net</title>
+	<link href="https://cbcg.net/"/>
+	<updated>{{ posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+	<id>https://cbcg.net/</id>
+	<author><name>socksandsandals</name></author>
+	{%- for post in posts %}
+	<entry>
+		<title>{{ post.title }}</title>
+		<link href="https://cbcg.net{{post.url}}"/>
+		<updated>{{ post.date | dateToRfc3339 }}</updated>
+		<id>{{ post.url }}</id>
+		<content type="html">
+			{{ post.content | htmlToAbsoluteUrls(post.root) }}
+		</content>
+	</entry>
+	{%- endfor %}
+</feed>

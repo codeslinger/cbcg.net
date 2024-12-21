@@ -1,0 +1,15 @@
+{
+  "name": "cbcg.net",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-rss": "^2.0.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "dayjs": "^1.11.10",
+    "eleventy-plugin-broken-links": "^2.2.1",
+    "markdown-it": "^14.0.0"
+  }
+}
