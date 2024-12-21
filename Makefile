@@ -7,13 +7,20 @@ build:
 	npx @11ty/eleventy
 
 clean:
-	rm -rf _site
-	rm -rf .cache
+	rm -rf _site .cache
 
 over: clean build
 
-install:
+ss: clean s
+
+setup:
 	rm -rf node_modules
 	npm install
 
-.PHONY: all s clean over install
+deploy:
+	./do deploy
+
+sync:
+	./do sync
+
+.PHONY: all s clean over ss setup deploy sync
