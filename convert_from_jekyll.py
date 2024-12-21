@@ -4,7 +4,7 @@ from functools import cache
 import os
 import pathlib
 import xml.etree.ElementTree as ET
-import yaml  # from: pip install pyyaml
+import yaml  # from: pip install pyyaml / pacman -S python-pyyaml
 
 
 @dataclass
@@ -33,11 +33,11 @@ def file_for_prefix(prefix):
         base = os.path.basename(path)
         if base.startswith(prefix):
             return path
-    raise ArgumentError(f"failed to find file for `{prefix}`")
+    raise f"failed to find file for `{prefix}`"
 
 
 def dst_for(dstdir, src, date, year):
-    basedst = os.path.basename(src)#.replace(f"{date}-", "")
+    basedst = os.path.basename(src)
     if basedst.endswith(".markdown"):
         basedst = basedst.replace(".markdown", ".md")
     return os.path.join(dstdir, year, basedst)
@@ -75,7 +75,7 @@ def convert(conversion):
         elif in_header:
             header_lines.append(line)
     if len(header_lines) < 1:
-        raise ArgumentError(f"found no header in `{conversion.src}`")
+        raise f"found no header in `{conversion.src}`"
     hdr = yaml.safe_load("".join(header_lines))
     hdr["layout"] = "post"
     hdr["date"] = conversion.date
