@@ -41,6 +41,8 @@ module.exports = function (config) {
     config.addPassthroughCopy('favicon-32x32.png');
     config.addPassthroughCopy('apple-touch-icon.png');
     config.addPassthroughCopy('site.webmanifest');
+    config.addPassthroughCopy('android-chrome-192x192.png');
+    config.addPassthroughCopy('android-chrome-512x512.png');
     config.addPassthroughCopy('403.html');
     config.addPassthroughCopy('404.html');
     config.addPassthroughCopy('assets');
