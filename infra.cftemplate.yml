@@ -184,6 +184,7 @@ Resources:
           # This is the `CachingOptimizedForUncompressedObjects` managed policy;
           # see https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-managed-cache-policies.html
           CachePolicyId: 'b2884449-e4de-46a7-ac36-70bc7f1ddd6d'
+          Compress: true
           FunctionAssociations:
             - EventType: viewer-request
               FunctionARN:
