@@ -20,7 +20,10 @@ setup:
 deploy:
 	./do deploy
 
+invalidate:
+	./do invalidate
+
 sync:
 	./do sync
 
-.PHONY: all s clean over ss setup deploy sync
+.PHONY: all s clean over ss setup deploy invalidate sync

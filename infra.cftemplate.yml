@@ -263,9 +263,7 @@ Outputs:
     Description: Logging bucket
     Value:
       Ref: LogBucket
-  CloudfrontDistributionName:
-    Description: CloudFront distribution domain name
+  CloudfrontDistribution:
+    Description: CloudFront distribution ID
     Value:
-      Fn::GetAtt:
-      - CDN
-      - DomainName
+      Ref: CDN
