@@ -15,7 +15,7 @@ Just got done with the MIT Spam Conference 2006 and let me tell you, it was much
 
 The conference itself was very punctual this year. In past years, there had been problems with that, but [Bill](https://www.networkworld.com/article/828116/lan-wan-the-antispam-man.html) ran a pretty tight ship this year. There weren't a lot of people there at all (it was packed last year) and that's a shame. They missed out. I had some more pictures, but the RAZR doesn't take very good pictures in low light, so I'm only putting up the ones that came out.
 
-![](/assets/032806_16282.jpg)
+![](/a/032806_16282.jpg)
 
 Presentations
 --------------
@@ -51,11 +51,11 @@ Jon Praed kept up his streak by talking at this one, this time about CAN-SPAM an
 Keynotes
 ---------
 
-![](/assets/032806_15391.jpg)
+![](/a/032806_15391.jpg)
 
 Eric Allman, creator of [Sendmail](https://en.wikipedia.org/wiki/Sendmail), gave the first keynote. He was advocating using Sender Domain Authentication (i.e. [DKIM](https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail)). Mostly it was an overview, but he indicated that there were definitely some rich research topics to explore in this area and that a lot of work was left to do to work out the IETF standards. Benefits listed were making whitelists more reliable, displaying auth results to user, etc. He concluded that it was a valuable tool for the anti-spam toolkit and that authentication was required to achieve a full ID suite for Internet communications.
 
-![](/assets/032806_16201.jpg)
+![](/a/032806_16201.jpg)
 
 Barry Shein, President and CEO of [The World](https://en.wikipedia.org/wiki/The_World_(Internet_service_provider)), gave the second keynote. It was pretty funny, if a little disconnected. He talked about [all of this stuff](https://www.theworld.com/~bzs/spamconf2006.html).
 
