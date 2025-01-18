@@ -36,6 +36,11 @@ Resources:
         ServerSideEncryptionConfiguration:
         - ServerSideEncryptionByDefault:
             SSEAlgorithm: AES256
+      LifecycleConfiguration:
+        Rules:
+        - Id: Delete90DayOldObjects
+          ExpirationInDays: 90
+          Status: 'Enabled'
       Tags:
       - Key: Project
         Value: website
